@@ -7,6 +7,9 @@
 // 2      | 3
 //
 // TODO: write code below
+function plusOne(n) {
+  return n + 1
+}
 
 // 2. Define a function that capitalises any string
 
@@ -16,6 +19,10 @@
 // hello | Hello
 // world | World
 // Hello | Hello
+function capitalize(str){
+  strReturn = str.charAt(0).toUpperCase() + 
+  return strReturn
+}
 
 // TODO: write code below
 
