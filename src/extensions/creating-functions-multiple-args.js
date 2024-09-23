@@ -10,9 +10,9 @@
 //
 // TODO: write code below
 function lowerUpper(lower, upper) {
-  const arr = []
-  for (let i = lower; lower <= upper; ++i) {
-    arr.push(i)
+  const arr = Array(upper - lower).fill(0)
+  for (let i = 0; i <= (upper - lower); ++i) {
+    arr[i] = i + lower
   }
   return arr
 }
@@ -29,8 +29,8 @@ function lowerUpper(lower, upper) {
 //
 // TODO: write code below
 function exclamation(str, cnt) {
-  let strReturn = str.toUppCase()
-  for (let i = 0; i <= cnt; ++i) {
+  let strReturn = str.toUpperCase()
+  for (let i = 0; i < cnt; ++i) {
     strReturn += '!'
   }
   return strReturn
@@ -56,7 +56,7 @@ function clock(str, minutes) {
   }
   strArr[1] = (parseInt(strArr[1]) % 60).toString()
 
-  if (strArr[0].length < 2) {
+  if (strArr[0] === '0') {
     strArr[0] = '0' + strArr[0]
   }
   if (strArr[1].length < 2) {
